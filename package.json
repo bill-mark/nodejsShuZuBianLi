@@ -1,0 +1,18 @@
+{
+  "name": "shuzu",
+  "version": "1.0.0",
+  "description": "cc",
+  "main": "shuzu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bill-mark/nodejsShuZuBianLi/blob/master/shuzu.js"
+  },
+  "keywords": [
+    "shu"
+  ],
+  "author": "bill",
+  "license": "ISC"
+}
