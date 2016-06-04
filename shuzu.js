@@ -1,29 +1,28 @@
 'use strict';
-var arr;
-function greet(arr){
-var n=arr.length;
-var  m=arr[0];	
-  for(var i=1;i<arr.length;i++){
-  	if(m<arr[i])
-           m=arr[i];
-  }
+var n=process.argv[2];
+var m=process.argv[3];
 
-var arr2 = new Array();
- arr2[0]=arr[0];
-for(var j=0;j<n;j++){   
-   var num=parseInt(Math.random()*m,10)+1 //10表示十进制,+1则包含m
-     for(var k=0;k<j;k++){     
-      if(num === arr2[j]){
-             j--;
-             break; 
-       }
-     } 
-      if(k === j) //说明不重复
-      {
-      	arr2[j]=num;
-      }
+function paixu(n,m)
+{
+	var arr = new Array();
+	for(var i=0;i<n;i++){   
+	   var num=parseInt(Math.random()*m,10) //10表示十进制
+	     for(var j=0;j<i;j++)
+	     {     
+		      if(num === arr[i])
+		      {
+		             j--;       //重复则重新循环     
+		             break; 
+		       }
+	      } 
+	      if(j === i) //说明不重复
+	      {
+	      	arr[i]=num;
+	      }
+	}
+	return arr;
+	console.log(arr);
 }
-return arr2;
-}
-module.exports = greet;
+
+module.exports = paixu; //函数paixu作为模块的输出暴露出去
 

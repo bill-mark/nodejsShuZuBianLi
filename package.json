@@ -1,18 +1,19 @@
 {
   "name": "shuzu",
   "version": "1.0.0",
-  "description": "cc",
+  "description": "second",
   "main": "shuzu.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bill-mark/nodejsShuZuBianLi/blob/master/shuzu.js"
+    "url": "git+https://github.com/bill-mark/nodejsShuZuBianLi.git"
   },
-  "keywords": [
-    "shu"
-  ],
   "author": "bill",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bill-mark/nodejsShuZuBianLi/issues"
+  },
+  "homepage": "https://github.com/bill-mark/nodejsShuZuBianLi#readme"
 }
